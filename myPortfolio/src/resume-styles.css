@@ -1,4 +1,7 @@
 h2 {
     background-color: rgb(195, 203, 221);
-    border: solid;
+    border: solid; 
+    height: 28px;
+    width: 240px;
+    text-align: center;
 }
