@@ -1,7 +1,27 @@
+
+
+body {
+    padding: 1%;
+    width: 95%;
+    background-color: rgb(213, 226, 226);
+}
+
+h1 {
+    border: solid;
+    border-radius: 60%;
+    width: 25%;
+    text-align: center;
+}
 h2 {
     background-color: rgb(195, 203, 221);
     border: solid; 
-    height: 28px;
-    width: 240px;
+    height: 15%;
+    width: 20%;
     text-align: center;
+}
+P {
+    font-family: 'Courier New', Courier, monospace;
+}
+li {
+    padding: 10px;
 }
