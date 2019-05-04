@@ -102,6 +102,14 @@ body {
   height: 20vw;
   margin: 3% 10%;
 }
+main {
+  height: 100%;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
+
+
 #profile-pic {
   width: 230px; 
   height: 200px;
