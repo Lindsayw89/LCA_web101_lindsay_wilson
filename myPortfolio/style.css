@@ -54,7 +54,7 @@ body {
   }
   
   #profile-pic {
-    width: 70%; 
+    width: 350px; 
    /* height: 300px;*/
     border-radius: 50%;
     margin: 15% auto;
@@ -100,13 +100,14 @@ body {
   .logo {
   width: 20%;
   /*height: 14vw;*/
-  margin: 1% 8%;
+ /* margin: 1% 4%;*/
 }
 main {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 25% 40% 35%;
+  grid-template-columns: 20% 50% 30%;
+  grid-template-rows: 45% 15% 15% 25%;
 }
 header {
   display: grid;
@@ -135,6 +136,7 @@ nav > a {
   text-align: center;
   border: 2px solid white;
 }
+
 .has-border {
   border-radius: 25px;
   border: 2px dotted rgb(86, 4, 97);
@@ -196,8 +198,8 @@ h2 {
     margin: 3% 10%;
   }
   #profile-pic {
-    width: 250px; 
-    height: 220px;
+    width: 100%;
+   /* height: 220px;*/
     border-radius: 50%;
     margin: 15% auto;
     grid-column: 2/3;
