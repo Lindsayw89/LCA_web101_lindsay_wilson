@@ -5,23 +5,72 @@ body {
     width: 95%;
     background-color: rgb(213, 226, 226);
 }
+header {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 30% 70%;
 
-h1 {
-    border: solid;
-    border-radius: 60%;
-    width: 25%;
-    text-align: center;
 }
+main {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin: 2%;
+}
+
+.title  {
+    grid-column: 2 / 3;
+    border: solid;
+    background-color: rgb(195, 203, 221); 
+    width: 25%;
+    height: 130%;
+    text-align:center;
+}
+.contact  {
+    grid-column: 1 / 2;
+}
+.contact-info {
+    grid-column: 1 /2;
+}
+.intro-title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.skill-title {
+    grid-column: 1 / 2;
+}
+.skill-list {
+    grid-column: 1 / 2;
+}
+.work-title {
+    grid-column: 2/3;
+    grid-row: 3 /4;
+}
+.job-list {
+    grid-column: 2/3;
+    grid-row: 4 /5;
+}
+.ed-title {
+    grid-column: 2/3;
+}
+.ed-list {
+    grid-column: 2/3;
+}
+h1 {
+    font-size:45px;
+}
+
 h2 {
     background-color: rgb(195, 203, 221);
     border: solid; 
-    height: 15%;
-    width: 20%;
-    text-align: center;
-}
-P {
-    font-family: 'Courier New', Courier, monospace;
+    height: 50%;
+    width: 32%;
+    text-align: center; 
+    font-size:30px;
 }
 li {
-    padding: 10px;
+    padding: 7px;
+    font-size:20px;
+}
+p {
+    font-size:20px;
 }

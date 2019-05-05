@@ -15,7 +15,7 @@ body {
   
   header {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 58%;
     width: 100%;
   }
   
@@ -54,8 +54,8 @@ body {
   }
   
   #profile-pic {
-    width: 350px; 
-    height: 300px;
+    width: 70%; 
+   /* height: 300px;*/
     border-radius: 50%;
     margin: 15% auto;
     grid-column: 2/3;
@@ -98,24 +98,27 @@ body {
 /* Small and up (Landscape Phones) */
 @media (max-width: 576px){
   .logo {
-  width: 20vw;
-  height: 20vw;
-  margin: 3% 10%;
+  width: 20%;
+  /*height: 14vw;*/
+  margin: 1% 8%;
 }
 main {
   height: 100%;
-  width: 75%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 30% 40% 30%;
+  grid-template-columns: 25% 40% 35%;
+}
+header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
 }
 
-
 #profile-pic {
-  width: 230px; 
-  height: 200px;
+  width: 80%; 
+  /*height: 200px;*/
   border-radius: 50%;
   margin: auto auto;
-  
   transform: rotate(90deg) 
 }
 
@@ -125,13 +128,20 @@ nav > a {
   width: 15%;
   color: rgb(44, 96, 109);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
-  border-radius: 25px;
+  font-size: 9px;
+  border-radius: 70%;
   background: transparent;
   padding: 10%; 
   text-align: center;
   border: 2px solid white;
 }
+.has-border {
+  border-radius: 25px;
+  border: 2px dotted rgb(86, 4, 97);
+  background: none;
+  padding: 20px; 
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
@@ -165,10 +175,10 @@ h2 {
     width: 85%;
     height: 15%;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     border-radius: 25px;
     background: transparent;
-    padding: 20px; 
+    padding: 25px; 
     padding-bottom: 14%;
     text-align: center;
     color: purple;
@@ -181,8 +191,8 @@ h2 {
 /* Medium and up (Tablets) */
 @media (max-width: 768px) {
   .logo {
-    width: 12%;
-    height: 50%;
+    width: 25%;
+    /*height: 40%;*/
     margin: 3% 10%;
   }
   #profile-pic {
