@@ -1,0 +1,203 @@
+body{
+    background-color:rgb(228, 194, 228);
+    
+    
+}
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows:  200px 300px 200px 200px;
+}
+.greet {
+    grid-column: 1 / 2;
+    border: solid;
+    border-color: black;
+    padding: 10%;
+}
+.date {
+    grid-column: 2/3;
+    border: solid;
+    border-color: black;
+    padding: 10%;
+}
+#myDiv {
+    grid-column: 1 /2;
+    border: solid;
+    border-color: black;
+    padding: 10%;
+}
+
+
+.calculator {
+    grid-column: 2 /3; 
+    grid-row: 3/6;
+    border: solid;
+    border-color: black;
+    padding: 3%;
+    grid-row-gap: 100px;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: f6f6f6;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .calculator {
+    max-width: 300px;
+     margin:0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+  }
+  .calculator input {
+    background: none;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    border-bottom: 2px solid #111;
+    padding: 20px;
+    text-align: right;
+    font-size: 40px;
+  }
+  .calculator-buttons {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  .calc-button {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #111;
+    padding: 10px;
+    color: #EEE;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer; 
+  }
+  .is-clear,
+  .is-zero {
+    grid-column: span 3;
+  }
+  .is-clear {
+    background: blue;
+  }
+  .is-equals {
+    background: #28D060;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #865d84;
+    color: white;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #865d84;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
+    padding: 10px;
+    width: 20%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
