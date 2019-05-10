@@ -6,7 +6,7 @@ body{
 main {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows:  200px 200px 200px 200px;
+    grid-template-rows:  200px 300px 200px 200px;
 }
 .greet {
     grid-column: 1 / 2;
@@ -26,6 +26,7 @@ main {
     border-color: black;
     padding: 10%;
 }
+
 
 .calculator {
     grid-column: 2 /3; 
