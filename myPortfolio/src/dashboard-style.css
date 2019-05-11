@@ -5,28 +5,30 @@ body{
 }
 main {
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows: 30% 70%;
 }
 .greet {
-    grid-column: 1 / 2;
+    grid-row: 1 / 2;
     border: solid;
     border-color: black;
-    padding: 10%;
+    padding: 5%;
 }
-.date {
-    grid-column: 2/3;
-    border: solid;
-    border-color: black;
-    padding: 10%;
+.greet {
+  text-align: center;
 }
-#myDiv {
-    grid-column: 1 /2;
-    border: solid;
-    border-color: black;
-    padding: 10%;
+.flexbox {
+  flex-direction:column;
+  justify-content: center;
+}
+section.flexbox {
+    height:100%;
 }
 
+#myDiv {
+    border: solid;
+    border-color: black;
+    padding: 10%;
+}
 
 .calculator {
     grid-column: 2 /3; 
