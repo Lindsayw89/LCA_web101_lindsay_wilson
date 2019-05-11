@@ -10,9 +10,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2%;
+    
     width: 850px;
-    padding: 20px;
+    padding: 0px;
     background-color: rgb(212, 209, 209);
 
 }
@@ -30,15 +30,18 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 33px;
   }
   .centered {
       font-size: 80px;
   }
-h2  p fieldset {
-    width: 270px;
-    height: 324px;
-    margin:20px;
-}
+  .one {
+      width:270px;
+      box-sizing: border-box;
+      height: 210px;
+  }
+
 h2 {
     background-color:rgb(211, 209, 209)
 }

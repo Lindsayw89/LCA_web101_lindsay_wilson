@@ -6,6 +6,7 @@ body{
 main {
     display: grid;
     grid-template-rows: 30% 80%;
+    padding: 40px;
 }
 .greet {
     grid-row: 1 / 2;
@@ -15,6 +16,8 @@ main {
 }
 .greet {
   text-align: center;
+  font-family: 'Francois One', sans-serif;
+  font-size: 40px;
 }
 .flexbox {
   display: flex;
@@ -37,13 +40,20 @@ section.flexbox {
   width: 30%;
   margin: none;
 }
+p {
+  font-family: 'Francois One', sans-serif;
+}
+h2 {
+  font-family: 'Francois One', sans-serif;
+}
 
 
 .calculator {
     border: solid;
     border-color: black;
     padding: 3%;
-    /*grid-row-gap: 100px;*/
+    border-radius: 5px;
+  
 }
 * {
     box-sizing: border-box;
@@ -81,7 +91,7 @@ section.flexbox {
   .calc-button {
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid #111;
-    padding: 6px;
+    padding: 4px;
     color: #EEE;
     border-radius: 5px;
     font-size: 18px;
