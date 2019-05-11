@@ -5,7 +5,7 @@ body{
 }
 main {
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 30% 80%;
 }
 .greet {
     grid-row: 1 / 2;
@@ -17,26 +17,33 @@ main {
   text-align: center;
 }
 .flexbox {
-  flex-direction:column;
-  justify-content: center;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  justify-items: center;
 }
 section.flexbox {
-    height:100%;
+    height:400px;
+}
+.datetime {
+  width: 30%;
+  margin: none;
+}
+.todo {
+  width: 30%;
+  margin: none;
+}
+.calculator {
+  width: 30%;
+  margin: none;
 }
 
-#myDiv {
-    border: solid;
-    border-color: black;
-    padding: 10%;
-}
 
 .calculator {
-    grid-column: 2 /3; 
-    grid-row: 3/6;
     border: solid;
     border-color: black;
     padding: 3%;
-    grid-row-gap: 100px;
+    /*grid-row-gap: 100px;*/
 }
 * {
     box-sizing: border-box;
@@ -45,12 +52,12 @@ section.flexbox {
   body {
     background: f6f6f6;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .calculator {
     max-width: 300px;
     height: 330px;
-     margin:0 auto;
+    /* margin:0 auto;*/
    /* border: 2px solid #111;
     border-radius: 5px;*/
   }
@@ -61,11 +68,11 @@ section.flexbox {
     width: 100%;
     border-bottom: 2px solid #111;
     padding: 5px;
-    text-align: right;
+    /*text-align: right;*/
     font-size: 40px;
   }
   .calculator-buttons {
-    padding: 6px;
+    padding: 3px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
