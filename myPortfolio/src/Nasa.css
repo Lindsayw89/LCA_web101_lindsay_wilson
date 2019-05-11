@@ -1,0 +1,50 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 450px, 324px;
+    flex-wrap:wrap;
+    justify-items: center;
+
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+    width: 850px;
+    padding: 20px;
+    background-color: rgb(212, 209, 209);
+
+}
+img {
+    align-content: center;
+    width: 850px;
+}
+.piccontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .centered {
+      font-size: 80px;
+  }
+h2  p fieldset {
+    width: 270px;
+    height: 324px;
+    margin:20px;
+}
+h2 {
+    background-color:rgb(211, 209, 209)
+}
+p {
+    background-color:rgb(211, 209, 209);
+}
+fieldset {
+    background-color:rgb(211, 209, 209)
+}
