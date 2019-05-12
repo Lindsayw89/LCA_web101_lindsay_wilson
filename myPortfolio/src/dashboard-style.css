@@ -1,16 +1,16 @@
 body{
     background-color:rgb(228, 194, 228);
     
-    
 }
 main {
     display: grid;
     grid-template-rows: 30% 80%;
     padding: 40px;
+   
 }
 .greet {
     grid-row: 1 / 2;
-    border: solid;
+    border: double;
     border-color: black;
     padding: 5%;
 }
@@ -35,6 +35,9 @@ section.flexbox {
 .todo {
   width: 30%;
   margin: none;
+}
+button {
+  background-color: darkorchid;
 }
 .calculator {
   width: 30%;

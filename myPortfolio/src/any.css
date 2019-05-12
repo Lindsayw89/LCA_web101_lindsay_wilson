@@ -1,0 +1,39 @@
+body {
+    background-color: rgba(231, 229, 88, 0.726)
+}
+
+main {
+    display: grid;
+   grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    padding: 80px;
+    margin: 6%;
+    background-color: green;
+}
+.two {
+    grid-column: 2 / 4;
+    border: solid;
+}
+
+
+.flexone {
+    background-color:pink;
+    grid-column: 1/4;
+    padding: 8px;
+
+}
+.flextwo {
+    background-color: pink;
+    grid-column: 1/4;
+    border: sold;
+    border-bottom: solid;
+    border-right: solid;
+    border-left: solid;
+}
+.one {
+    border: solid;
+}
+
+.flexone {
+    border: solid;
+}
