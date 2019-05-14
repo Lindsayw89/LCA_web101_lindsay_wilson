@@ -37,3 +37,33 @@ main {
 .flexone {
     border: solid;
 }
+
+
+@media (max-width: 576px) {
+
+main {
+    display: grid;
+    grid-template-columns: 1 fr;
+    grid-template-rows: auto;
+    margin: 4px;
+    padding: 0;
+}
+.one {
+    grid-column: 1/4
+    
+}
+.two {
+    grid-column: 1/4
+    
+}
+.flexone {
+    grid-column: 1/4
+   
+}
+.flextwo {
+    grid-column: 1/4
+}
+footer {
+    grid-column: 1/4;
+}
+}
