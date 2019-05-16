@@ -4,7 +4,7 @@ body {
 header {
     border: dashed 2px whitesmoke;
     padding: 2%;
-    margin: 2%;
+    margin: 4%;
 }
 h1 {
     font-size: 48px;
@@ -18,12 +18,13 @@ a {
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
     padding: 10px 30px;
-    margin: 2%;
+    margin: 3%;
     border: 2px solid white
 }
 main > p {
     font-size: 30px;
     font-family: 'Niconne', cursive;
+    text-align: center;
 }
 main > address {
     font-size: 40px;
@@ -83,7 +84,7 @@ main > address {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 90%;
       }
     
 }
