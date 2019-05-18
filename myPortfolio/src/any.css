@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(228, 194, 228);
+    background-color:rgb(202, 224, 100);
     
 }
 header {
@@ -37,25 +37,46 @@ p {
     grid-column: 2/3;
     grid-row: 2/3;
     border: 2px solid rgb(238, 221, 240);
-    background-color:rgb(218, 144, 202)
+    background-color: rgb(218, 144, 202);
+    
+   
    
 
 }
 .calculator {
     grid-column: 3/ 4;
-    grid-row: 2/3
-    
+    grid-row: 2/3;
+
 }
+
+.calc-container {
+    background-color: rgb(218, 144, 202);
+    border: 2px solid rgb(238, 221, 240);
+}
+
 .calendar {
     grid-column: 1/span 3;
     grid-row:3/4;
     text-align: center;
     border: 2px solid rgb(238, 221, 240);
-    background-color:rgb(218, 144, 202)
+    background-color:rgb(218, 144, 202);
+    padding: 5% 20%;
 }
-.calendar month {
-    text-align: center;
+.month {
+    background-color: rgb(199, 168, 207);
+    font-size: 20px;
+    width:920px;
 }
+tr th {
+    background-color: rgb(137, 137, 207);
+    font-size: 34px;
+}
+td {
+    font-size: 26px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(223, 211, 221);
+}
+
 * {
     box-sizing: border-box;
     }
@@ -66,7 +87,7 @@ p {
       padding: 5px;
        margin:0 auto;
       border: 2px solid #111;
-      background-color: rgb(233, 193, 233)
+      background-color: rgb(23, 193, 233)
     }
     input {
       height: 30px;
@@ -92,23 +113,16 @@ p {
     .is-zero {
       grid-column: span 2;
     }
-    .month {
-        background-color: rgb(199, 168, 207);
-        font-size: 20px;
-        width:710px;
-    }
-    tr th {
-        background-color: rgb(137, 137, 207);
-        font-size: 34px;
-    }
-    td {
-        font-size: 26px;
-        font-family:Arial, Helvetica, sans-serif;
-        background-color: rgb(223, 211, 221);
-    }
+  
+
+
+
+
+
+
     @media (max-width: 576px) {
         body{
-            background-color:rgb(228, 194, 228);
+            background-color:rgb(202, 224, 100);
             
         }
         header {
@@ -116,26 +130,22 @@ p {
         }
         main {
             display: grid;
-            grid-template-columns:1 fr;
-            grid-template-rows:1 fr 1fr 1fr 1fr 1fr;
-            /*"time"
+            grid-template-areas:
             "greet"
-            "todo"
-            "calendar" 
-            "calculator"*/
+            "time"
+            ""
         
         }
         .greet {
-            grid-column: 1/2;
+            grid-column: 1/4;
             grid-row: 1/ 2;
             text-align: center;
-            height: 110px;
-            width:80%;
+            height: 180px;
             background-color:rgb(218, 144, 202);
             border:4px double black;
         }
         p {
-            font-size: 15px;
+            font-size: 25px;
             font-family:Arial, Helvetica, sans-serif;
             font-weight: bold;
         }
@@ -144,45 +154,64 @@ p {
             grid-row: 2/3;
             background-color:rgb(218, 144, 202);
             border: 2px solid rgb(238, 221, 240);
-            width:80%;
             
         
         }
         .todo {
-            grid-column: 1/2;
-            grid-row: 3/4;
+            grid-column: 2/3;
+            grid-row: 2/3;
             border: 2px solid rgb(238, 221, 240);
-            background-color:rgb(218, 144, 202);
-            width:300px;
+            background-color: rgb(218, 144, 202);
+            
+           
+           
+        
         }
         .calculator {
-            grid-column: 1/ 2;
-            grid-row: 4/5;
-            
+            grid-column: 3/ 4;
+            grid-row: 2/3;
+        
         }
+        
+        .calc-container {
+            background-color: rgb(218, 144, 202);
+            border: 2px solid rgb(238, 221, 240);
+        }
+        
         .calendar {
-            grid-column: 1/2;
-            grid-row:5/6;
+            grid-column: 1/span 3;
+            grid-row:3/4;
             text-align: center;
             border: 2px solid rgb(238, 221, 240);
-            background-color:rgb(218, 144, 202)
-
-            /* stopped editing here*/
+            background-color:rgb(218, 144, 202);
+            padding: 5% 20%;
         }
-        .calendar month {
-            text-align: left;
+        .month {
+            background-color: rgb(199, 168, 207);
+            font-size: 20px;
+            width:920px;
         }
+        tr th {
+            background-color: rgb(137, 137, 207);
+            font-size: 34px;
+        }
+        td {
+            font-size: 26px;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: rgb(223, 211, 221);
+        }
+        
         * {
             box-sizing: border-box;
             }
             
             .calculator {
              max-width: 200px;
-             height: 160px;
+             height: 270px;
               padding: 5px;
                margin:0 auto;
               border: 2px solid #111;
-              background-color: rgb(233, 193, 233)
+              background-color: rgb(23, 193, 233)
             }
             input {
               height: 30px;
@@ -192,13 +221,13 @@ p {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
               grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                padding: 4px;
-              grid-gap: 3px;
+                padding: 8px;
+              grid-gap: 15px;
             }
             .cal-button {
               background: lightgrey;
               border: 1px solid;
-              font-size: 10px;
+              font-size: 20px;
             }
             
             .is-clear {
@@ -208,21 +237,5 @@ p {
             .is-zero {
               grid-column: span 2;
             }
-            .month {
-                background-color: rgb(199, 168, 207);
-                font-size: 20px;
-                width:510px;
-            }
-            tr th {
-                background-color: rgb(137, 137, 207);
-                font-size: 20px;
-            }
-            td {
-                font-size: 16px;
-                font-family:Arial, Helvetica, sans-serif;
-                background-color: rgb(223, 211, 221);
-            }
-        
-
-      
-    } 
+    }
+     
