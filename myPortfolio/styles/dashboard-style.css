@@ -1,56 +1,79 @@
 body{
-    background-color:rgb(228, 194, 228);
-    
+  background-color:rgb(192, 62, 116);
+  padding-bottom: 2%;
+  
 }
 header {
-    font-family: 'Francois One', sans-serif;
+  font-family: 'Francois One', sans-serif;
 }
 main {
-    display: grid;
-    grid-template-rows: 30% 80%;
-    padding: 40px;
-   
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 4%;
+  margin: 3%;
+
 }
 .greet {
-    grid-row: 1 / 2;
-    border: double;
-    border-color:black;
-    padding: 5%;
-}
-.greet {
+  grid-column: 1/4;
+  grid-row: 1/ 2;
   text-align: center;
-  font-family: 'Francois One', sans-serif;
-  font-size: 40px;
-}
-.flexbox {
-  display: flex;
-  flex-direction:row;
-  justify-content: space-between;
-  justify-items: center;
-}
-section.flexbox {
-    height:400px;
-}
-.datetime {
-  width: 30%;
-  margin: none;
-}
-.todo {
-  width: 30%;
-  margin: none;
-}
-button {
-  background-color: darkorchid;
-}
-.calculator {
-  width: 30%;
-  margin: none;
+  height: 180px;
+  background-color:rgb(218, 144, 202);
+  border:6px double black;
 }
 p {
-  font-family: 'Francois One', sans-serif;
+  font-size: 25px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
-h2 {
-  font-family: 'Francois One', sans-serif;
+.time {
+  grid-column: 1/ 2;
+  grid-row: 2/3;
+  background-color:rgb(218, 144, 202);
+  border: 6px solid rgb(238, 221, 240);
+  
+
+}
+.todo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  border: 6px solid rgb(238, 221, 240);
+  background-color: rgb(218, 144, 202);
+
+}
+.calculator {
+  grid-column: 3/ 4;
+  grid-row: 2/3;
+
+}
+
+.calc-container {
+  background-color: rgb(218, 144, 202);
+  border: 6px solid rgb(238, 221, 240);
+}
+
+.calendar {
+  grid-column: 1/span 3;
+  grid-row:3/4;
+  text-align: center;
+  border: 6px solid rgb(238, 221, 240);
+  background-color:rgb(218, 144, 202);
+  padding: 5% 20%;
+}
+.month {
+  background-color: rgb(199, 168, 207);
+  font-size: 20px;
+  width:920px;
+}
+tr th {
+  background-color: rgb(137, 137, 207);
+  font-size: 34px;
+}
+td {
+  font-size: 26px;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(223, 211, 221);
 }
 
 * {
@@ -58,11 +81,12 @@ h2 {
   }
   
   .calculator {
-      max-width: 400px;
-      height: 270px;
+   max-width: 200px;
+   height: 270px;
     padding: 5px;
      margin:0 auto;
     border: 2px solid #111;
+    background-color: rgb(23, 193, 233)
   }
   input {
     height: 30px;
@@ -72,9 +96,8 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    padding: 8px;
+      padding: 8px;
     grid-gap: 15px;
-    
   }
   .cal-button {
     background: lightgrey;
@@ -89,4 +112,18 @@ h2 {
   .is-zero {
     grid-column: span 2;
   }
+
+
+
+
+  @media (max-width: 576px) {
+
+body {
+  background-color: red;
+    }
+
+
+   
+
+}
   
