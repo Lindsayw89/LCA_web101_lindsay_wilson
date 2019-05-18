@@ -116,12 +116,122 @@ td {
 
 
 
+
+
+
+
   @media (max-width: 576px) {
 
 body {
-  background-color: red;
+  background-color: rgb(88, 20, 66);
     }
-
+    main {
+      display: grid;
+     /* grid-template-columns: auto;*/
+      grid-template-rows: 30% 40% 40% 40% 60%;
+      
+      margin: 1%;
+    
+    }
+    .greet {
+      grid-row: 1/ 2;
+      text-align: center;
+      height: 30%;
+      width: 40%;
+      background-color:rgb(218, 144, 202);
+      border:3px double black;
+    }
+    p {
+      font-size: 15px;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+    }
+    .time {
+      grid-row: 2/3;
+      width:50%;
+      height:30%;
+      background-color:rgb(218, 144, 202);
+      border: 6px solid rgb(238, 221, 240);
+      
+    
+    }
+    .todo {
+     
+      grid-row: 2/3;
+      border: 6px solid rgb(238, 221, 240);
+      background-color: rgb(218, 144, 202);
+    
+    }
+    .calculator {
+  
+      grid-row: 2/3;
+    
+    }
+    
+    .calc-container {
+      background-color: rgb(218, 144, 202);
+      border: 6px solid rgb(238, 221, 240);
+    }
+    
+    .calendar {
+  
+      grid-row:3/4;
+      text-align: center;
+      border: 6px solid rgb(238, 221, 240);
+      background-color:rgb(218, 144, 202);
+      padding: 5% 20%;
+    }
+    .month {
+      background-color: rgb(199, 168, 207);
+      font-size: 10px;
+      width:420px;
+    }
+    tr th {
+      background-color: rgb(137, 137, 207);
+      font-size: 20px;
+    }
+    td {
+      font-size: 16px;
+      font-family:Arial, Helvetica, sans-serif;
+      background-color: rgb(223, 211, 221);
+    }
+    
+    * {
+      box-sizing: border-box;
+      }
+      
+      .calculator {
+       max-width: 120px;
+       height: 200px;
+        padding: 5px;
+         margin:0 auto;
+        border: 2px solid #111;
+        background-color: rgb(23, 193, 233)
+      }
+      input {
+        height: 16px;
+      }
+      
+      .calculator-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          padding: 2px;
+        grid-gap: 6px;
+      }
+      .cal-button {
+        background: lightgrey;
+        border: 1px solid;
+        font-size: 10px;
+      }
+      
+      .is-clear {
+        grid-column: span 3;
+        background-color: lightblue;
+      }
+      .is-zero {
+        grid-column: span 2;
+      }
 
    
 
