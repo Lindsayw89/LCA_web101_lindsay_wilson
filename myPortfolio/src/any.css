@@ -6,20 +6,20 @@ header {
     font-family: 'Francois One', sans-serif;
 }
 
-Header {
-  grid-area: .greet;
+.greet {
+  grid-area: greet;
 }
-one {
-  grid-area: .time;
+.time {
+  grid-area: time;
 }
-two {
-  grid-area: .todo;
+.todo {
+  grid-area: todo;
 }
-three {
-  grid-area: .calc-container;
+.calc-container {
+  grid-area: calc-container;
 }
-four {
-  grid-area: .calendar;
+.calendar {
+  grid-area: calendar;
 }
 
 
@@ -27,9 +27,9 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "header header header"
-      "one two three"
-      "four four four";
+      "greet greet greet"
+      "time todo calc-container"
+      "calendar calendar calendar";
 
 
 }
