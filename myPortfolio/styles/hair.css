@@ -2,7 +2,7 @@ body {
     background-color:rgb(107, 207, 207)
 }
 header {
-    border: dashed 2px whitesmoke;
+    border: dashed 4px whitesmoke;
     padding: 2%;
     margin: 4%;
 }
@@ -14,6 +14,7 @@ h1 {
 .center-link {
    text-align: center;
 }
+
 a { 
     font-size: 20px;
     font-family: 'Questrial', sans-serif;
@@ -38,6 +39,9 @@ main > address {
     margin-right: auto;
     width: 50%;
   }
+  .phone-number {
+      font-family: sans-serif
+  }
 
 @media (max-width: 576px) {
     
@@ -51,7 +55,7 @@ main > address {
     }
     h1 {
         text-align: center;
-        font-size: 48px;
+        font-size: 38px;
         font-family: 'Lobster', cursive;
         text-shadow: 4px 4px rgb(205, 230, 238);
     }
@@ -86,5 +90,58 @@ main > address {
         margin-right: auto;
         width: 90%;
       }
+      .phone-number{
+          font-size: 22px;
+      }
+    
+}
+@media (max-width: 768px) and (min-width: 577px) {
+
+    body {
+        background-color:rgb(107, 207, 207)
+    }
+   header {
+        border: none;
+        padding: 2%;
+        margin: 2%;
+    }
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Lobster', cursive;
+        text-shadow: 4px 4px rgb(205, 230, 238);
+    }
+    .center-link {
+       display: grid;
+       grid-template-areas: 
+       "one two three four"
+    
+    }
+    a { 
+        font-size: 20px;
+        font-family: 'Questrial', sans-serif;
+        padding: 10px 20px;
+        margin: 2%;
+        border: none;
+    }
+    main > p {
+        font-size: 30px;
+        font-family: 'Niconne', cursive;
+    }
+    main > address {
+        font-size: 40px;
+        font-family:  'Questrial', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    .imgcenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+      }
+    
+
+
     
 }
