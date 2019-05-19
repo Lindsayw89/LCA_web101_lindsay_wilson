@@ -2,6 +2,8 @@
 body{
   background-color:rgb(192, 62, 116);
   padding-bottom: 2%;
+  margin-right: 2%;
+
   
 }
 header {
@@ -21,7 +23,7 @@ main {
   text-align: center;
   height: 120%;
   background-color:rgb(218, 144, 202);
-  border:6px double black;
+  border:15px double black;
 }
 p {
   font-size: 25px;
@@ -150,7 +152,32 @@ body {
       "calendar"
     }
 
+  }
 
-
+  @media (max-width: 768px) and (min-width: 577px) {
+  
+    .greet {
+      grid-area: greet;
+    }
+    .time {
+      grid-area: time;
+    }
+    .todo {
+      grid-area: todo;
+    }
+    .calc-container {
+      grid-area: calc-container;
+    }
+    .calendar {
+      grid-area: calendar;
+    }
+    main{
+      display: grid;
+      grid-template-areas:
+      "greet greet"
+      "time todo"
+      "calc-container calc-container"
+      "calendar calendar"
+    }
 
   }
