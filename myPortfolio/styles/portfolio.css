@@ -1,0 +1,32 @@
+body {
+    background-image: url(../images/dogMinimalHeartBone.jpg);
+    opacity: .95;
+}
+header {
+    font-size:50px;
+    color: rgb(243, 66, 155);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.main-container {
+    display:grid;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three"
+    "four";
+    text-align:center;
+    grid-gap:5%;
+}
