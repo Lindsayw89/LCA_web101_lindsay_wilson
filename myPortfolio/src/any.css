@@ -1,229 +1,64 @@
-body{
-    background-color:rgb(202, 224, 100); 
+body {
+  background-color: lightgray;
 }
-
 header {
-    font-family: 'Francois One', sans-serif;
+  background-color:teal;
+  padding: 20px 40px;
 }
-
-.greet {
-  grid-area: greet;
+nav  {
+  text-align:center;
 }
-.time {
-  grid-area: time;
+a {
+  padding: 4%;
+  font-size: 20px;
 }
-.todo {
-  grid-area: todo;
-}
-.calc-container {
-  grid-area: calc-container;
-}
-.calendar {
-  grid-area: calendar;
-}
-
-
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-      "greet greet greet"
-      "time todo calc-container"
-      "calendar calendar calendar";
-
-
+  margin: 8%;
 }
-      .greet {
-        text-align: center;
-        height: 180px;
-        background-color:rgb(218, 144, 202);
-        border:8px double black;
-    }
-    p {
-        font-size: 25px;
-        font-family:Arial, Helvetica, sans-serif;
-        font-weight: bold;
-    }
-    .time {
-        
-        background-color:rgb(218, 144, 202);
-        border: 2px solid rgb(238, 221, 240);  
-    
-    }
-    .todo {
-        
-        border: 2px solid rgb(238, 221, 240);
-        background-color: rgb(218, 144, 202);
-    }
-    
-    
-    .calc-container {
-        background-color: rgb(218, 144, 202);
-        border: 2px solid rgb(238, 221, 240);
-    }
-    
-    .calendar {
-        
-        border: 2px solid rgb(238, 221, 240);
-        background-color:rgb(218, 144, 202);
-        padding: 5% 20%;
-    }
-    .month {
-        background-color: rgb(199, 168, 207);
-        font-size: 20px;
-        width:920px;
-    }
-    tr th {
-        background-color: rgb(137, 137, 207);
-        font-size: 34px;
-    }
-    td {
-        font-size: 26px;
-        font-family:Arial, Helvetica, sans-serif;
-        background-color: rgb(223, 211, 221);
-    }
-    
-    * {
-        box-sizing: border-box;
-        }
-        
-        .calculator {
-         max-width: 200px;
-         height: 270px;
-          padding: 5px;
-           margin:0 auto;
-          border: 2px solid #111;
-          background-color: rgb(23, 193, 233)
-        }
-        input {
-          height: 30px;
-        }
-        
-        .calculator-buttons {
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
-          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            padding: 8px;
-          grid-gap: 15px;
-        }
-        .cal-button {
-          background: lightgrey;
-          border: 1px solid;
-          font-size: 20px;
-        }
-        
-        .is-clear {
-          grid-column: span 3;
-          background-color: lightblue;
-        }
-        .is-zero {
-          grid-column: span 2;
-        }
-      
-
-
+.top {
+  grid-area: top;
 }
-
-@media (max-width: 576px) {
-
-main {
-    display: grid;
-    grid-template-areas:
-        "greet"
-        "time"
-        "todo"
-        "calc-container"
-        "calendar";
+.two {
+  grid-area: two;
 }
-/*
-.greet {
-    text-align: center;
-    height: 180px;
-    background-color:rgb(218, 144, 202);
-    border:8px double black;
+.three {
+  grid-area: three;
 }
-p {
-    font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
+.four {
+  grid-area: four;
 }
-.time {
-    
-    background-color:rgb(218, 144, 202);
-    border: 2px solid rgb(238, 221, 240);
-    
-
+.five {
+  grid-area: five;
 }
-.todo {
-    
-    border: 2px solid rgb(238, 221, 240);
-    background-color: rgb(218, 144, 202);
+.six {
+  grid-area: six;
 }
-
-
-.calc-container {
-    background-color: rgb(218, 144, 202);
-    border: 2px solid rgb(238, 221, 240);
+.seven {
+  grid-area: seven;
 }
-
-.calendar {
-    
-    border: 2px solid rgb(238, 221, 240);
-    background-color:rgb(218, 144, 202);
-    padding: 5% 20%;
+.eight {
+  grid-area: eight;
 }
-.month {
-    background-color: rgb(199, 168, 207);
-    font-size: 20px;
-    width:920px;
+.main-container {
+  display:grid;
+  grid-gap: 50px;
+  grid-template-areas:
+  "top top top top"
+  "two three four five"
+  "six six seven seven"
+  "six six seven seven"
+  "six six eight eight"
+  "six six eight eight";
 }
-tr th {
-    background-color: rgb(137, 137, 207);
-    font-size: 34px;
+.top {
+  background-color: rgb(174, 199, 199);
+  padding: 80px;
+  border: 2px solid black;
 }
-td {
-    font-size: 26px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(223, 211, 221);
+.fourimage {
+  padding: 50px 30px;
+  text-align: center;
+  width: 40%;
+border:6px solid blueviolet;
+  background-color: rgb(13, 13, 128);
 }
-
-* {
-    box-sizing: border-box;
-    }
-    
-    .calculator {
-     max-width: 200px;
-     height: 270px;
-      padding: 5px;
-       margin:0 auto;
-      border: 2px solid #111;
-      background-color: rgb(23, 193, 233)
-    }
-    input {
-      height: 30px;
-    }
-    
-    .calculator-buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        padding: 8px;
-      grid-gap: 15px;
-    }
-    .cal-button {
-      background: lightgrey;
-      border: 1px solid;
-      font-size: 20px;
-    }
-    
-    .is-clear {
-      grid-column: span 3;
-      background-color: lightblue;
-    }
-    .is-zero {
-      grid-column: span 2;
-    }
-}
-
-
-
