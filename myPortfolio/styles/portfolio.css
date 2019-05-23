@@ -3,10 +3,11 @@ body {
     opacity: .95;
 }
 header {
-    font-size:50px;
-    color: rgb(243, 66, 155);
+    font-size:60px;
+    color: rgb(248, 55, 152);
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
+    padding:3%;
 }
 .one {
     grid-area: one;
@@ -29,4 +30,8 @@ header {
     "four";
     text-align:center;
     grid-gap:5%;
+}
+a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
 }
