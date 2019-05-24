@@ -4,7 +4,8 @@ body {
     text-align: center;
 }
 Header {
-    background-color: rgba(211, 227, 230, 0.925); 
+    background: linear-gradient(to right, rgb(143, 70, 143), rgb(206, 151, 206), rgb(84, 100, 206) 70%);
+}
     margin:auto auto;
     text-shadow: 2px whitesmoke
 }
