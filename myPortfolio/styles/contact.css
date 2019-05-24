@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(183, 221, 219);
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+}
+Header {
+    background-color: rgba(211, 227, 230, 0.925); 
+    margin:auto auto;
+    text-shadow: 2px whitesmoke
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "phone"
+    "email"
+    "link"
+    "face";
+    margin: auto auto;
+    padding: 2%;
+   
+}
+.phone {
+    grid-area:phone;
+    margin:auto auto;
+    padding:1%;
+    
+}
+
+.email {
+    grid-area:email;
+    margin:auto auto;
+    padding:1%;
+}
+.link {
+    grid-area:link;
+    margin:auto auto;
+    padding:1%;
+}
+.face {
+    grid-area:face;
+    margin:auto auto;
+    padding:1%;
+}
+}
+
+
+h1 {
+    font-size: 40px;
+    text-shadow: 6px 6px rgb(107, 185, 211);
+}
+li {
+    font-size:25px; 
+    padding: 1%;
+}
+.message {
+    height: 40px;
+}
+.phone { 
+    background-color:rgb(206, 151, 206);
+    width:20%;
+    border-radius: 25px;
+}
+.phone:hover {
+    background-color: rgb(186, 108, 202);
+    color:white;
+}
+.email {
+    background-color:rgb(120, 120, 216);
+    width:30%;
+    border-radius:25px;
+}
+.email:hover {
+    background-color: rgb(12, 170, 209);
+    color:white;
+}
+.link {
+    background-color:rgb(206, 151, 206);
+    width:42%;
+    border-radius: 25px;   
+}
+.link:hover {
+    background-color: rgb(186, 108, 202);
+    color:white;
+}
+.face {
+    background-color:rgb(120, 120, 216);
+    width:32%;
+    border-radius: 25px;
+}
+.face:hover {
+    background-color: rgb(12, 170, 209);
+    color:white;
+}
+
+
+
+
+
+@media (min-width: 992px) {
+
+
+
+}
