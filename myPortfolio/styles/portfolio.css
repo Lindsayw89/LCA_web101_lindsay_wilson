@@ -7,6 +7,7 @@ Header {
     text-align: center;
     padding: 30px;
     color: rgb(122, 122, 216);
+
 }
 .one {
     grid-area: one;
@@ -34,6 +35,9 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
+button{
+    background-color: rgb(145, 145, 175);
+}
 .five {
     margin: auto;
     padding:150px;
@@ -49,12 +53,13 @@ form {
     color: white;
 }
 input {
-    width: 22em;
+    width: 20em;
 }
 
 .messagespace {
     height: 60px;
 }
+
 
 
 @media (min-width: 992px) {
@@ -70,7 +75,7 @@ input {
         font-size: 70px;
     }
     form {
-        background-color: rgb(75, 28, 119);
+        background-color: rgb(94, 65, 121);
         padding: 40px;
         width: 30%;
         text-align: center;
