@@ -1,13 +1,11 @@
 body {
-    background-image: url(../images/dogMinimalHeartBone.jpg);
-    opacity: .95;
+    background-image: url(../images/pastelWatercolor525.jpg);
 }
-header {
-    font-size:60px;
-    color: rgb(248, 55, 152);
-    font-family:Arial, Helvetica, sans-serif;
+Header {
+    font-size: 20px;
     text-align: center;
-    padding:3%;
+    padding: 20px;
+    color: rgb(122, 122, 216);
 }
 .one {
     grid-area: one;
@@ -34,4 +32,41 @@ header {
 a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
+}
+.five {
+    margin: auto;
+    padding:150px;
+}
+form {
+    background-color: rgb(75, 28, 119);
+    padding: 40px;
+    width: 60%;
+    text-align: center;
+}
+form {
+    color: white;
+}
+
+
+@media (min-width: 992px) {
+
+    .main-container {
+        display:grid;
+        grid-template-areas: 
+        "one one two two"
+        "three three four four"
+       
+    }
+    form {
+        background-color: rgb(75, 28, 119);
+        padding: 40px;
+        width: 30%;
+        text-align: center;
+    }
+    
+
+
+
+
+
 }
