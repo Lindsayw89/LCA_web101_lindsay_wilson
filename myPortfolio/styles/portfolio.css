@@ -1,10 +1,11 @@
 body {
     background-image: url(../images/pastelWatercolor525.jpg);
+    font-family: 'Merriweather Sans', sans-serif;
 }
 Header {
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     color: rgb(122, 122, 216);
 }
 .one {
@@ -39,12 +40,16 @@ a {
 }
 form {
     background-color: rgb(75, 28, 119);
+    border:10px;
     padding: 40px;
     width: 60%;
     text-align: center;
 }
 form {
     color: white;
+}
+.messagespace {
+    height: 60px;
 }
 
 
@@ -56,6 +61,9 @@ form {
         "one one two two"
         "three three four four"
        
+    }
+    Header {
+        font-size: 70px;
     }
     form {
         background-color: rgb(75, 28, 119);
