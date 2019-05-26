@@ -42,12 +42,16 @@ form {
     background-color: rgb(75, 28, 119);
     border:10px;
     padding: 40px;
-    width: 60%;
+    width: 100%;
     text-align: center;
 }
 form {
     color: white;
 }
+input {
+    width: 22em;
+}
+
 .messagespace {
     height: 60px;
 }
