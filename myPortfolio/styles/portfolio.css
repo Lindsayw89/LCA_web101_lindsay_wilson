@@ -44,22 +44,28 @@ button{
 }
 form {
     background-color: rgb(75, 28, 119);
-    border:10px;
     padding: 40px;
-    width: 100%;
+    width: 160%;
     text-align: center;
 }
 form {
     color: white;
 }
 input {
-    width: 80%;
+    width: 75%;
 }
 
 .messagespace {
-    height: 60px;
+    height: 90px;
 }
+iframe {
+    width: 50%;
+    height: 80%;
+}
+.buttonsub {
+    width: 7em;
 
+}
 
 
 @media (min-width: 992px) {
@@ -76,13 +82,22 @@ input {
     }
     form {
         background-color: rgb(94, 65, 121);
+        margin: auto auto;
         padding: 40px;
-        width: 30%;
+        width: 18%;
         text-align: center;
     }
     
-
-
+    form {
+        background-color: rgb(75, 28, 119);
+        padding: 40px;
+        width: 40%;
+        text-align: center;
+    }
+    iframe {
+        width: 80%;
+        height: 110%;
+    }
 
 
 
