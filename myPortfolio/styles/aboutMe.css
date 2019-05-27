@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(228, 204, 217);
+}
+
+.header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+.about {
+    grid-area: about;
+}
+.picOfMe {
+    grid-area: picOfMe;
+}
+.flowerMobile {
+    display: none;
+}
+
+
+
+img {
+   width:80%;
+   height:220px;
+   
+   opacity: .8;
+}
+header {
+    background-color: rgb(116, 58, 92);
+    padding-bottom: 1.5%;
+}
+.text-centerimg {
+    color: rgb(218, 212, 216);
+    padding-left: 4em;
+    
+}
+
+nav {
+    text-align: right;
+    padding: 5px;
+
+}
+a {
+    padding: .8em;
+    font-size: 20px;
+    color :white;
+    border: 2px solid white;
+    margin: 2em;
+    font-family: 'Satisfy', cursive;
+}
+h1 {
+    font-size: 55px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+p {
+    font-family: 'Patua One', cursive;
+    display: inline;
+}
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    padding: .5em 2em;
+}
+.picOfMe {
+   display:block;
+   float: left;
+   width: 18vw;
+   padding: 3%;
+    transform: rotate(90deg)  
+}
+
+
+@media (max-width: 576px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+          
+    }
+    
+   .flower {
+        width:120%;
+        opacity: .8;
+     }
+   
+     header {
+         background-color: rgb(116, 58, 92);
+         padding-bottom: 1.5%;
+     }
+     .text-centerimg {
+         color: rgb(218, 212, 216);
+         padding-left: 1em;
+     }
+     
+     nav {
+         text-align: right;
+         padding: px;
+     
+     }
+     a {
+         padding: .8em;
+         font-size: 16px;
+         color :white;
+         border: 1px solid white;
+         margin: .2em;
+         font-family: 'Satisfy', cursive;
+     }
+     h1 {
+         width: 100%;
+         font-size: 38px;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+     }
+     p {
+         font-family: 'Patua One', cursive;
+        
+     }
+     h2 {
+         font-family: 'Satisfy', cursive;
+         font-size: 50px;
+         padding: .5em 1em;
+     }
+     .picOfMe {
+       display: none;
+        width: 80%;
+        padding: 1%;
+         
+     }
+
+
+
+
+}
