@@ -68,7 +68,7 @@ h2 {
 .picOfMe {
    display:block;
    float: left;
-   width: 16vw;
+  width: 16vw;
    padding: 3%;
     transform: rotate(90deg)  
 }
