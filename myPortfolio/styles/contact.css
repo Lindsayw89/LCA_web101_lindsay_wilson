@@ -42,11 +42,11 @@ Header {
     margin:auto auto;
     padding:1%;
 }
-}
+
 
 
 h1 {
-    font-size: 40px;
+    font-size: 90px;
     text-shadow: 6px 6px rgb(107, 185, 211);
 }
 li {
@@ -54,7 +54,7 @@ li {
     padding: 1%;
 }
 .message {
-    height: 40px;
+    height: 100px;
 }
 .phone { 
     background-color:rgb(206, 151, 206);
@@ -93,12 +93,77 @@ li {
     color:white;
 }
 
+form {
+    font-size:40px;
+}
+input {
+    height: 50px;
+    width: 210px;
+}
 
 
 
 
-@media (min-width: 992px) {
+@media (max-width: 576px) {
 
+    h1 {
+        font-size: 30px;
+        text-shadow: 6px 6px rgb(107, 185, 211);
+    }
+    li {
+        font-size:15px; 
+        padding: 1%;
+    }
+    .message {
+        height: 40px;
+        word-wrap: wrap;
+    }
+    .phone { 
+        background-color:rgb(206, 151, 206);
+        width:30%;
+        border-radius: 25px;
+    }
+    .phone:hover {
+        background-color: rgb(186, 108, 202);
+        color:white;
+    }
+    .email {
+        background-color:rgb(120, 120, 216);
+        width:55%;
+        border-radius:25px;
+    }
+    .email:hover {
+        background-color: rgb(12, 170, 209);
+        color:white;
+    }
+    .link {
+        background-color:rgb(206, 151, 206);
+        width:72%;
+        border-radius: 25px;   
+    }
+    .link:hover {
+        background-color: rgb(186, 108, 202);
+        color:white;
+    }
+    .face {
+        background-color:rgb(120, 120, 216);
+        width:38%;
+        border-radius: 25px;
+    }
+    .face:hover {
+        background-color: rgb(12, 170, 209);
+        color:white;
+    }
+    
+    form {
+        font-size:20px;
+    }
+    input {
+        height: 40px;
+        width: 180px;
+    }
+    
+    
 
 
 }
