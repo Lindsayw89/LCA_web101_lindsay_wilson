@@ -52,6 +52,11 @@ body {
     justify-content: flex-end;
     width: 100%;
   }
+h1.zoomIn {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
   
   #profile-pic {
     width: 350px; 
@@ -67,7 +72,8 @@ body {
     color:rgb(54, 3, 46);
     grid-column: 2/3;
     margin: 3% auto;
-    border-bottom: 2px solid rgb(150, 18, 62);;
+    border-bottom: 2px solid rgb(150, 18, 62);
+    font-size:40px;
   }
   
   h2 {
@@ -92,6 +98,30 @@ body {
     letter-spacing: 26px;
     font-style: italic;
   }
+
+  .disappear {
+    background-color: hotpink;
+    font-size: 20px;
+    height: 100px;
+    width: 200px;
+    animation-name: disappear;
+    animation-duration: 4s;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+
+  
+  @keyframes disappear {
+    0% {opacity: 0; }
+    25% {opacity: .5; }
+    40% {opacity: .8; }
+  50% {opacity: 1; }
+  100% {opacity: 0; };
+ }
+
+ @keyframes linear-grad {
+   0% 
+ }
 
   /* Extra Small and up (Portrait Phones) */
 
