@@ -120,10 +120,7 @@ h1.zoomIn {
     100% {opacity: 0; };
  }
 
- @keyframes linear-grad {
-   0% 
- }
-
+ 
   /* Extra Small and up (Portrait Phones) */
 
 /* Small and up (Landscape Phones) */
