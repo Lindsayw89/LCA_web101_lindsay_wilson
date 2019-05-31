@@ -1,20 +1,65 @@
 body {
-    background-color: rgb(204, 204, 149);
+    background-color: rgb(240, 218, 238);
+    margin: 10px;
 }
+h1 {
+text-align: center;
+}
+h1:hover .red {
+    color:red;
+    font-size:50px;
+}
+h1:hover .blue {
+    color:rgb(69, 94, 236);
+    font-size:50px;
+}
+h1:hover .green {
+    color:rgb(12, 151, 12);
+    font-size:50px;
+}
+h1:hover .purple {
+    color:purple;
+    font-size:50px;
+}
+
+
 .box {
-    margin: 20px;
-}
+    text-align: center;
+    }
+
+    .center {
+        border: 2px solid black;
+        width: 50%;
+        margin: 2% 25%;
+    }
 .odd {
     height: 50px;
     width: 50px;
-    margin: 20px;
+    margin: 30px auto;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.center:hover .odd {
+    width: 100px;
+    height: 100px; 
+    transform: translate(450px) rotate(360deg);
+    
 }
 
 .even {
     height: 50px;
     width: 50px;
-    margin: 20px;
+    margin: 30px auto;
+    transition: width 2s, height 2s,transform 2s;
+
 }
+.center:hover .even {
+    width: 25px;
+    height: 25px;   
+    transform: translate(-490px) rotate(-360deg);
+}
+
+
 
 .one {
     background-color: red;
