@@ -21,13 +21,18 @@ Header {
 .four {
     grid-area: four;
 }
+.six {
+    grid-area: six;
+}
 .main-container {
     display:grid;
     grid-template-areas: 
     "one"
     "two"
     "three"
-    "four";
+    "four"
+    "six"
+    "five";
     text-align:center;
     grid-gap:5%;
 }
@@ -75,6 +80,7 @@ iframe {
         grid-template-areas: 
         "one one two two"
         "three three four four"
+        "six six six six"
        
     }
     Header {
