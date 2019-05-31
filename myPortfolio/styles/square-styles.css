@@ -42,7 +42,7 @@ h1:hover .purple {
 .center:hover .odd {
     width: 100px;
     height: 100px; 
-    transform: translate(450px) rotate(360deg);
+    transform: translate(325px) rotate(360deg);
     
 }
 
@@ -56,7 +56,7 @@ h1:hover .purple {
 .center:hover .even {
     width: 25px;
     height: 25px;   
-    transform: translate(-490px) rotate(-360deg);
+    transform: translate(-362px) rotate(-360deg);
 }
 
 
