@@ -13,7 +13,7 @@ body {
     width: 200px;
     height: 200px;
     border: 2px solid black;
-    font-size: 115px;
+    font-size: 135px;
     color:rgb(71, 38, 124);
 }
 div:onlick{
@@ -23,8 +23,6 @@ div:onlick{
 @media (max-width: 576px ) {
 
 .game{
-        display:flex;
-        flex-wrap: wrap;
         margin: 5% 10%;
 }
     
@@ -34,9 +32,7 @@ div:onlick{
         border: 2px solid black;
         font-size: 65px;
 }
-placemarker {
-    font-size:40px;
-}
+
    
 }
 @media (max-width: 478px ) {
@@ -45,5 +41,9 @@ placemarker {
         height: 70px;
         border: 2px solid black;
     }
+.game {
+    margin: 10% 20%;
+}
+
 }
 
