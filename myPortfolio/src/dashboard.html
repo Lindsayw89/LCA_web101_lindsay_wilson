@@ -6,15 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/dashboard-style.css">
   <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
-  <script src="../scripts/dashboard.js"></script></script>
-  <script src= "../scripts/jQuery.js"></script>
+  
+  
   <title> Dashboard</title>
 </head>
+<body>
 <header>Lindsay's Dashboard <br>
     <a href="./portfolio.html">Back to my portfolio</a><br>
     <a href="./wFImage.html" >WIREFRAME</a>
 </header>
-
 
 <main>
     <div class="greet">
@@ -25,13 +25,14 @@
     </div>
     <div class="todo">
         <h2>To Do</h2>
-        <input type="text">
-        <button>Add</button>
         <ul>
-            <li>practice coding</li>
-            <li>Go to gym</li>
-            <li>go grocery shopping</li>
+            <li class="item">go grocery shopping</li>
         </ul>
+        <div id="newItemButton"><button href="#">new item</button></div>
+    <form id="newItemForm">
+      <input type="text" id="itemField" placeholder="Item" />
+      <input type="submit" id="add" value="add" />
+    </form>
     </div>
     <div class="calc-container">
     <div class="calculator">
@@ -130,3 +131,6 @@
     </div>
     </div>
 </main>
+<script src= "../scripts/jQuery.js"></script>
+<script src="../scripts/dashboard.js"></script>
+</body>
