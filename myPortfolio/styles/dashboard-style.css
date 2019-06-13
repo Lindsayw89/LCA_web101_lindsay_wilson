@@ -63,12 +63,22 @@ li {
 }
 
 .calendar {
-  grid-column: 1/span 3;
+  grid-column: 1/3;
   grid-row:3/4;
   text-align: center;
   border: 6px solid rgb(238, 221, 240);
   background-color:rgb(218, 144, 202);
   padding: 5% 15%;
+}
+
+/* working here map*/
+.map {
+  border: 6px solid rgb(238, 221, 240);
+  background-color: rgb(218, 144, 202);
+  grid-column: 3/4;
+  grid-row:3/4;
+  padding-top: 15%;
+  text-align: center;
 }
 .month {
   background-color: rgb(199, 168, 207);
@@ -85,6 +95,7 @@ td {
   font-family:Arial, Helvetica, sans-serif;
   background-color: rgb(223, 211, 221);
 }
+
 
 * {
   box-sizing: border-box;
@@ -134,6 +145,8 @@ td {
 
 
 
+
+
  @media (max-width: 576px) {
 
 
@@ -152,6 +165,9 @@ td {
     .calendar {
       grid-area: calendar;
     }
+    .map {
+      grid-area: map
+    }
     main{
       display: grid;
       grid-template-areas:
@@ -159,6 +175,7 @@ td {
       "time"
       "todo"
       "calc-container"
+      "map"
       "calendar"
     }
 
@@ -181,13 +198,21 @@ td {
     .calendar {
       grid-area: calendar;
     }
+    .map {
+      grid-area: map
+    }
     main{
       display: grid;
       grid-template-areas:
       "greet greet"
       "time todo"
-      "calc-container calc-container"
+      "calc-container map"
       "calendar calendar"
+    }
+
+  .map {
+     padding-top: 10%;
+    font-size:80px;
     }
 
   }
