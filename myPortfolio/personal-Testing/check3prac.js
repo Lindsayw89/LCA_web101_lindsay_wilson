@@ -1,4 +1,4 @@
-
+//clicker game
 //the function will be ready once document is loaded
 $(document).ready(function() {
   //setting a varible to count to be 0 to start
@@ -31,20 +31,11 @@ $(document).ready(function() {
       })
 
   });
+//canvas API 
+  const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+//fills in the canvas the listed color
+ctx.fillStyle = 'pink';
+//1st 2 # are how far away from edge, 2nd 2 are sizes of rectangle
+ctx.fillRect(10, 10, 150, 100);
 
-
- // myElement.css("font-size","35px");
-/*var button = document.getElementById("clickme");
-var count = 0;
-button.onclick = function() {
-  count = count + 1;
-  button.innerHTML = "Click me: " + count;
-};
-
-$(document).ready(function() {
-  var num = 1;
-  $('.box').click(function() {
-    num++;
-    $(this).text(num);
-  })
-});*/
