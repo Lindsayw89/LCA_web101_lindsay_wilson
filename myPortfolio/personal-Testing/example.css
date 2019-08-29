@@ -1,0 +1,42 @@
+
+body {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 35% 35% 35% 35%;
+
+}
+header{
+    font-size: 25px;
+    color: red;
+}
+h3{
+    font-size: 25px;
+}
+div{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    color: pink;
+    
+}
+.p2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    color: purple;
+    font-style: bold;
+    
+}
+.p3{
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: yellow;
+}
+.p4{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    background-color: purple;
+}
+.p5{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: yellow;
+}

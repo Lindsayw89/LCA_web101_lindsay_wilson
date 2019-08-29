@@ -11,6 +11,7 @@ body {
     width: 15%;
     height: 85%;
     margin: 3% 10%;
+    
   }
   
   header {
@@ -85,7 +86,7 @@ h1.zoomIn {
   button {
     grid-column: 2/3;
     margin: 3% auto;
-    width: 70%;
+    width: fit-content;
     height: 15%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
