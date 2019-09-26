@@ -19,6 +19,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         padding: 8px;
+        
       grid-gap: 15px;
     }
     .cal-button {

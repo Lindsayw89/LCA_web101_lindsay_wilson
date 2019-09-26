@@ -19,6 +19,7 @@ main {
 img {
     align-content: center;
     width: 850px;
+
 }
 .piccontainer {
     position: relative;
@@ -32,10 +33,9 @@ img {
     transform: translate(-50%, -50%);
     font-family: 'Anton', sans-serif;
     letter-spacing: 33px;
+    font-size: 80px;
   }
-  .centered {
-      font-size: 80px;
-  }
+
   .one {
       width:270px;
       box-sizing: border-box;

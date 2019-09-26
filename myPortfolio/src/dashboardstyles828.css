@@ -19,7 +19,7 @@ header{
 
 .p2{
     grid-area: p2;
-    background-color: red;
+    background-color:red;
 }
 .p3{
     grid-area: p3;
